@@ -47,7 +47,7 @@ $addresses = 'a,server_a.php';
         ?>
         <h1>Requesting ``<?php echo $request; ?>''</h1>
         <h2>Explanation:</h2>
-        <p>In this page you are trying to request ``<?php echo $request; ?>'' to the local service. Unfortunately it does not have any information whatsoever on what df2 is and so it cannot authorize you. Even if ``a'' is mentioned it has to reason to initiate a remote request because yours is not mentioned anywhere in its policy.</p>
+        <p>In this page you are trying to request ``<?php echo $request; ?>'' to the local service. Unfortunately it does not have any information whatsoever on what df2 is and so it cannot authorize you. Even if ``a'' is mentioned it has no reason to initiate a remote request because yours is not mentioned anywhere in its policy.</p>
         <h2>Trying request with these credentials:</h2>
 		<form id = "request_form" action = "server.php">
 			<table>
