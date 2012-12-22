@@ -34,7 +34,7 @@ $addresses = 'a,server_a.php';
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<title>OK</title>
+		<title>KO</title>
 		<link type="text/css" rel="stylesheet" href="style.css" />
 		<script type="text/javascript" src="client.js"></script>
 	</head>
