@@ -37,7 +37,7 @@ session_start();
 
 	<body>
         <?php
-        if($_SESSION['username'] == '')
+        if(!isset($_SESSION['username']))
             echo '<h1>You are not authorized to view this page, <a href =\'login.html\'>try again</a>.</h1>';
         else {
         ?>
