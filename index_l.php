@@ -40,9 +40,22 @@ session_start();
         if($_SESSION['username'] == '')
             echo '<h1>You are not authorized to view this page, <a href =\'login.html\'>try again</a>.</h1>';
         else {
-            echo '<h1>Hello, ' . $_SESSION['username'] . '!</h1>';
-            echo '<p><a href = \'ok_with_ccs.php\'>Here you can access with your current credentials.</a></p>';
-            echo '<p><a href = \'not_enough_cs.php\'>Here you do not have enough credentials.</a></p>';
+        ?>
+            <h1>Hello, <?php echo $_SESSION['username']; ?>!</h1>
+            <h2>Policies</h2>
+            <p>On this server:</p>
+            <blockquote>
+                <p>policy(a controls df1).</p>
+                <p>policy(a says trusted_b -> a trusts b on df1).</p>
+            </blockquote>
+            <p>On server ``a'':</p>
+            <blockquote>
+                <p>policy(b says a says trusted_b -> a says trusted_b).</p>
+            </blockquote>
+            <h2>Requests</h2>
+            <p><a href = 'ok_with_ccs.php'>Here you can access with your current credentials.</a></p>
+            <p><a href = 'not_enough_cs.php'>Here you do not have enough credentials.</a></p>
+        <?php
         }
         ?>
 	</body>
